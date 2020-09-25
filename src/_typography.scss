@@ -10,7 +10,7 @@
   monospace;
 
   /// * set base values * /
-  --text-base-size: 1em;
+  --text-base-size: 1.2em;
   --text-scale-ratio: 1.2;
 
   /// * type scale * /
@@ -29,8 +29,8 @@
 
 @include for-size(tablet-portrait-up) {
   :root {
-    --text-base-size: 1.25em;
-    --text-scale-ratio: 1.25;
+    --text-base-size: 1.5em;
+    --text-scale-ratio: 1.5;
   }
 }
 
@@ -68,7 +68,7 @@ h2, .text--xl {
   letter-spacing: -.1rem;
 }
 
-h3, .text--lg {
+h3, .text--lg, %text--lg {
   font-size: var(--text-lg);
   letter-spacing: -.1rem;
 }
@@ -148,7 +148,7 @@ code {
 //* utility classes *
 //
 ///
-.truncate {
+.truncate, %truncate {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

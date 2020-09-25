@@ -72,7 +72,7 @@
   --font-secondary: serif;
   --font-mono: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
   monospace;
-  --text-base-size: 1em;
+  --text-base-size: 1.2em;
   --text-scale-ratio: 1.2;
   --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
   --text-sm: calc(1em / var(--text-scale-ratio));
@@ -87,8 +87,8 @@
 
 @media (min-width: 37.5rem) {
   :root {
-    --text-base-size: 1.25em;
-    --text-scale-ratio: 1.25;
+    --text-base-size: 1.5em;
+    --text-scale-ratio: 1.5;
   }
 }
 body {
