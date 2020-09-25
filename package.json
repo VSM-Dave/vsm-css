@@ -1,0 +1,19 @@
+{
+  "name": "@vsm-dave/vsm-css",
+  "version": "0.0.1",
+  "description": "A CSS framework",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build src/index.scss",
+    "dev": "parcel src/index.scss",
+    "start": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": "git://github.com/vsm-dave/vsm-css.git",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.11"
+  }
+}
