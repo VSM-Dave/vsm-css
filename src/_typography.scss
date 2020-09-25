@@ -10,7 +10,7 @@
   monospace;
 
   /// * set base values * /
-  --text-base-size: 1.2em;
+  --text-base-size: 1em;
   --text-scale-ratio: 1.2;
 
   /// * type scale * /
@@ -29,8 +29,8 @@
 
 @include for-size(tablet-portrait-up) {
   :root {
-    --text-base-size: 1.5em;
-    --text-scale-ratio: 1.5;
+    --text-base-size: 1.25em;
+    --text-scale-ratio: 1.25;
   }
 }
 
@@ -45,7 +45,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, form legend {
   color: var(--color-text-heading);
-  margin-bottom: var(--space-xxs);
+  margin-block-end: var(--space-xxs);
   line-height: var(--heading-line-height);
   font-weight: 300;
 }
@@ -73,7 +73,7 @@ h3, .text--lg, %text--lg {
   letter-spacing: -.1rem;
 }
 
-h4, .text--md {
+h4, .text--md, %text--md {
   font-size: var(--text-md);
   letter-spacing: -.08rem;
 }
@@ -91,6 +91,7 @@ h6, .text--xs, %text--xs {
 p {
   line-height: var(--body-line-height);
   margin-block-start: 0;
+  max-width: 55ch;
 }
 
 a {
@@ -107,11 +108,11 @@ b, strong {
 
 .text-container {
   h2, h3, h4 {
-    margin-top: var(--space-sm);
+    margin-block-start: var(--space-sm);
   }
 
   ul, ol, p {
-    margin-bottom: var(--space-md);
+    margin-block-end: var(--space-md);
   }
 
   ul, ol {

@@ -72,7 +72,7 @@
   --font-secondary: serif;
   --font-mono: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
   monospace;
-  --text-base-size: 1.2em;
+  --text-base-size: 1em;
   --text-scale-ratio: 1.2;
   --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
   --text-sm: calc(1em / var(--text-scale-ratio));
@@ -87,8 +87,8 @@
 
 @media (min-width: 37.5rem) {
   :root {
-    --text-base-size: 1.5em;
-    --text-scale-ratio: 1.5;
+    --text-base-size: 1.25em;
+    --text-scale-ratio: 1.25;
   }
 }
 body {
@@ -102,7 +102,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, form legend {
   color: var(--color-text-heading);
-  margin-bottom: var(--space-xxs);
+  margin-block-end: var(--space-xxs);
   line-height: var(--heading-line-height);
   font-weight: 300;
 }
@@ -144,6 +144,7 @@ h6, .text--xs {
 p {
   line-height: var(--body-line-height);
   margin-block-start: 0;
+  max-width: 55ch;
 }
 
 a {
@@ -158,10 +159,10 @@ b, strong {
 }
 
 .text-container h2, .text-container h3, .text-container h4 {
-  margin-top: var(--space-sm);
+  margin-block-start: var(--space-sm);
 }
 .text-container ul, .text-container ol, .text-container p {
-  margin-bottom: var(--space-md);
+  margin-block-end: var(--space-md);
 }
 .text-container ul, .text-container ol {
   list-style-position: outside;

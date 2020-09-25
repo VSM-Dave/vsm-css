@@ -34,6 +34,12 @@
   /* typography */
   --color-text: var(--gray-10);
   --color-text-heading: var(--black);
+
+  //@media (prefers-color-scheme: dark) {
+  //  --color-text: var(--gray-1);
+  //  --color-text-heading: var(--white);
+  //}
+
   --color-text-subtle: var(--gray-6);
   --color-link: var(--color-primary);
   --color-link-visited: var(--color-primary-dark);
