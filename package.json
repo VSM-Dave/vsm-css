@@ -1,6 +1,6 @@
 {
   "name": "@vsm-dave/vsm-css",
-  "version": "0.0.3-0",
+  "version": "0.0.3",
   "description": "A CSS framework",
   "main": "index.js",
   "scripts": {
